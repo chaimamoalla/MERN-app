@@ -1,0 +1,127 @@
+/* General styles for the card container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Reduced space between the cards */
+  justify-content: space-between;
+  padding: 10px; /* Reduced padding around the container */
+}
+
+/* General styles for the card */
+.post-card {
+  background-color: rgb(35, 35, 35);
+  border-radius: 8px; /* Reduced border radius */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Reduced shadow for a subtler effect */
+  overflow: hidden;
+  flex: 1 1 calc(28% - 10px); /* 3 cards per row, smaller width */
+  margin: 5px 0; /* Reduced vertical margin between rows */
+  padding: 10px; /* Reduced padding inside the card */
+  box-sizing: border-box;
+  max-width: 500px; /* Minimum width for cards */
+}
+
+/* Styles for the post header (profile picture, title, and tags) */
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Reduced gap */
+  margin-bottom: 8px; /* Reduced margin */
+}
+
+.profile-icon {
+  width: 30px; /* Further reduced size of profile icon */
+  height: 30px; /* Further reduced size of profile icon */
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.post-info {
+  flex-grow: 1;
+}
+
+.post-info h4 {
+  font-size: 0.9em; /* Further reduced font size */
+  margin: 0;
+  color: #333;
+}
+
+.post-tags {
+  margin-top: 3px; /* Reduced margin */
+}
+
+.tag {
+  display: inline-block;
+  background-color: #e5e5e5;
+  color: #555;
+  padding: 2px 5px; /* Further reduced padding for tags */
+  margin-right: 3px; /* Further reduced margin */
+  border-radius: 15px; /* Adjusted radius */
+  font-size: 0.7em; /* Further reduced font size */
+}
+
+.post-date {
+  color: #888;
+  font-size: 0.75em; /* Further reduced font size */
+  margin-top: 3px; /* Reduced margin */
+}
+
+/* Styles for the post image */
+.post-image {
+  margin-bottom: 8px; /* Reduced margin */
+}
+
+.post-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px; /* Reduced border radius */
+  object-fit: cover;
+}
+
+/* Styles for the post footer (likes, comments, share) */
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75em; /* Further reduced font size */
+  color: #888;
+  padding-top: 5px; /* Reduced padding */
+}
+
+/* Icon container style */
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 3px; /* Reduced gap */
+}
+
+.icon {
+  color: #888;
+  font-size: 0.9em; /* Further reduced icon size */
+}
+
+.icon-container span {
+  margin-left: 3px; /* Reduced margin */
+}
+
+/* Additional styling for links inside the card (e.g., for user profiles or post links) */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design - Adjust card width on smaller screens */
+@media (max-width: 768px) {
+  .post-card {
+    flex: 1 1 calc(45% - 10px); /* 2 cards per row on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .post-card {
+    flex: 1 1 100%; /* 1 card per row on very small screens */
+  }
+}

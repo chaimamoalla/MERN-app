@@ -1,0 +1,54 @@
+/* Dark Theme Styles */
+body {
+  background-color: #1a1a1a;
+  color: #f8f9fa;
+}
+
+.profile-page {
+  min-height: 100vh;
+}
+
+.header-card {
+  position: relative;
+  border: none;
+}
+
+.header-image {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.profile-avatar-wrapper {
+  position: absolute;
+  top: 210px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid #1a1a1a;
+  border-radius: 50%;
+}
+
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Card Styling */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.text-muted {
+  color: #adb5bd !important;
+}
+
+/* Button Styling */
+button {
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #495057;
+}

@@ -1,0 +1,58 @@
+/* FriendsList.css */
+
+.friends-list-card {
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fff; /* White background */
+    margin-bottom: 20px; /* Space below the card */
+  }
+  
+  .friend-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+ 
+  .friend-name {
+    font-size: 17px;
+    flex-grow: 1; /* Ensures the name takes available space */
+
+}
+
+  .button-group {
+    display: flex;
+    gap: 0.5rem; /* Space between buttons */
+    white-space: nowrap; /* Prevents buttons from wrapping */
+  }
+  
+  @media (max-width: 768px) {
+    .friend-img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .friend-name {
+      font-size: 14px;
+    }
+  
+    .button-group {
+      gap: 0.3rem; /* Adjust button spacing */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .friend-img {
+      width: 35px;
+      height: 35px;
+    }
+  
+    .friend-name {
+      font-size: 12px;
+    }
+  
+    .button-group {
+      flex-direction: column; /* Stack buttons vertically on small screens */
+      align-items: flex-end; /* Align buttons to the right */
+    }
+  }
+  

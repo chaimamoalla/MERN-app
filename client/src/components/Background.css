@@ -1,0 +1,46 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+.background-container {
+  position: fixed; /* Keep the background fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+  background: #000; /* Dark background */
+}
+
+.starbg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://cdn.prod.website-files.com/5e0a5d9d743608d0f3ea6753/6405ec1049bd67549a85793f_Space.svg') no-repeat center center;
+  background-size: cover;
+  z-index: -2;
+}
+
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://cdn.prod.website-files.com/5e0a5d9d743608d0f3ea6753/6405ebc66eec1b7027005bdf_Stars.svg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.5; /* Adjust opacity as needed */
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  min-height: 200vh; /* Ensure there's enough content to scroll */
+  background: linear-gradient(rgba(191, 41, 240, 0) 24%, rgba(191, 41, 240, 0.64));
+  z-index: 1; /* Ensure it's above the background */
+}

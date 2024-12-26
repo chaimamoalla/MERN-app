@@ -1,0 +1,67 @@
+.custom-navbar {
+    background-color: transparent;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  
+  
+  .icon {
+    height: 20px;
+    margin-left: 5px;
+    
+  }
+  
+ 
+  /* Navbar.css */
+
+/* Style for the search bar container */
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    background-color: transparent; /* Transparent background for the container */
+    border: none; /* Remove any default borders */
+    padding: 0; /* Remove default padding if any */
+  }
+  
+  /* Style for the search input */
+  .search-bar .form-control {
+    width: 350px;
+    background-color: transparent; /* Transparent background for the input */
+    border: 1px solid #ddd; /* Border color */
+    border-radius: 20px; /* Rounded corners */
+    color: #000; /* Text color inside the input */
+  }
+  
+  /* Style for the search button */
+  .search-button {
+    border-radius: 20px; /* Rounded corners for the button */
+    border: none;
+    padding: 0 10px; /* Adjust padding as needed */
+    background-color: transparent; /* Transparent background */
+  }
+  
+  /* Style for the search icon inside the button */
+  .search-button .icon {
+    height: 20px; /* Adjust icon size as needed */
+    margin-right: 5px;
+  }
+  /******/
+  .navbar-icons .icon {
+    height: 24px;
+  }
+  
+  .profile-circle {
+    display: inline-block;
+    width: 40px; /* Desired circle size */
+    height: 40px; /* Desired circle size */
+    border-radius: 50%; /* Makes the container circular */
+    background-image: url('../assets/chaima\ moalla1.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire circle */
+    background-position: center; /* Centers the image within the circle */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+  }
+  
